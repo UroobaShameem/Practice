@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<head>
+    <title>Karachi</title>
+    <style>
+        body{background-color: azure;}
+        /*Top heading*/
+        .header{
+            text-align: center; font-size: 60px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            text-decoration: underline;}
+
+        /*navigation bar styles */
+        .nav {overflow: hidden; font-size: 30px; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+              padding-left: 30%; padding-right: 30%;padding-top: 10px; padding-right: 10px; display: block; font-weight: bold;}
+
+        .nav a { float: left; text-align: center;}
+
+        /*spaces between navigation words */
+        .tab{display: inline-block;margin-left: 30px;}
+
+        /*Places button styling */
+        .dropdown {float: left; overflow: hidden; color: red;}
+
+        /*removing box style and grey color of places button*/
+        .dropdown .button { margin: 0; font-size: 30px; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                outline: none; border: none; background-color: azure; font-weight: bold;}
+
+        /*dropdown menu styling */
+        .dropmenu {display: none; position: absolute; z-index: 1; box-shadow: 0px 8px 16px 0px grey;background-color: #f9f9f9;}
+
+        .dropmenu a {float: none; display: block; text-align: left;}
+
+        .dropdown:hover .dropmenu {display: block;}
+
+        /*removing purple color of visited link*/
+        a:link, a:visited {text-decoration: none; color: black;}
+
+        /*marking red when cursor moves over link*/
+        a:hover {color:red;} .button:hover {color: red;}
+
+        /*drawing arrow for dropdown menu*/
+        .arrow {border: solid black; border-width: 0 3px 3px 0; display: inline-block; padding: 3px; 
+            transform: rotate(45deg);}
+
+        /*styling for all heading*/
+        h1 {
+            font-size: 35px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif }
+    
+        /*styling for all text and form*/
+        p, .feedback { font-size: 25px; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif}
+        
+        /*center align for images*/
+        .img { display: block; margin-left: auto; margin-right: auto; width: 50%;}
+
+        /*submit button styling*/
+        .submit {font-size: 20px;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                 padding: 8px;}
+
+        /*button turns red when cursor moves over it*/
+        .submit:hover {color: red;}
+
+    </style>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+</head>
+
+<body>
+    <h1 class="header">Famous Places Of Karachi</h1>
+        <img src="https://cdn.techjuice.pk/wp-content/uploads/2018/06/karachi-cover-1024x576.jpg"
+        width="100%" height="300px"> <br> <br>
+
+    <div class="nav">
+        <a href="#intro" >Home<span class="tab"></span></a> 
+            <div class="dropdown"><button class="button">Places <i class="arrow"></i><span class="tab"></span></button><div class="dropmenu">
+                <a href="#quaid">Tomb of Quaid-e-Azam</a>
+                <a href="#frere">Frere Hall</a>
+                <a href="#empress">Empress Market</a>
+                <a href="#grand">Port Grand</a>
+                <a href="#maritime">Maritime Museum</a> </div>
+            </div>
+            <a href="#form">Feedback</a>
+    </div> <br> <br>
+
+        <article>
+            <section id="intro">
+                <h1>City Of Lights</h1>
+                <p>Karachi is the capital of the Pakistani province of Sindh. It is the most populous city in Pakistan, and fifth-most-populous city proper in the world. Ranked as a beta-global city, the city is Pakistan's premier industrial and financial centre.It is the cultural, economic, philanthropic, educational, and political hub of the country, and Pakistan's most cosmopolitan city. Situated on the Arabian Sea, Karachi serves as a transport hub, and is home to Pakistan's two largest seaports, the Port of Karachi and Port Bin Qasim, as well as Pakistan's busiest airport, Jinnah International Airport.</p>
+            </section>
+
+            <section id="quaid">
+                <h1>Quaid-e-Azam Tomb</h1>
+                <p>The pure white marble facade of the museum is not a sight to miss when in Karachi. The Mausoleum is a resting place for the country’s founder, or in Urdu Quaid, Mohammad Ali Jinnah. Its minimalist dome over a cube design was inspired by the Samanid Mausoleum in Uzbekistan.</p>
+                <img class="img" src="https://img.atlasobscura.com/ST6uFnNFwnqXIUrqLa1DJBgvzQ7l9crpg1K6Xkcjk2c/rs:fill:780:520:1/g:ce/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy81ZDUx/NTZmNC1iYWJhLTRi/MWEtYWVmYi0wYzBk/YzkzODU1OWFhMDk3/NTBhMGI2M2Q1NjQ2/ZmNfdG9tYjEuanBn.jpg">
+            </section>
+
+            <section id="frere">
+                <h1>Frere Hall</h1>
+                 <p>Dating back to 1865, the Frere Hall building recalls the time when Pakistan was a part of the Indian British colony. Surrounded by lush green gardens, today, the building serves as a library and an art gallery. Designed by Henry Saint Clair Wilkins, Frere Hall is located in the Saddar district, which is also home to many other picturesque colonial architecture.</p>
+                <img class="img" src="https://miro.medium.com/max/936/1*wGGrKk0iOxbfDmqhy6Grkg.png">
+                </section>
+
+            <section id="empress">
+                <h1>Empress Market</h1>
+                <p>The Empress Market is a colourful but chaotic market that sells everything and anything. It’s a cool attraction to visit early in the morning to avoid rush hour. All imaginable groceries, live animals and pets, textiles, stationery and many other things can be bought in the foyers and interiors of this colonial-era structure. The building is named after the then Empress of India, Queen Victoria.</p>
+                <img class="img" src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0e/98/f8/74/an-outer-view.jpg?w=600&h=-1&s=1">
+            </section>
+
+            <section id="grand">
+                <h1>Port Grand</h1>
+                <p>Being among the few upscale open-air food establishments by the sea, Port Grand is a great place to try different cuisines that are offered by many of its restaurants and parlours, all the while viewing the sun as it sets into the ocean.</p>
+                <img class="img" src="https://media-cdn.tripadvisor.com/media/photo-s/07/70/01/8b/port-grand.jpg">
+            </section>
+
+            <section id="maritime">
+                <h1>Maritime Museum</h1>
+                <p>This navel museum is among the city's best attractions as it gives visitors a chance to see a real submarine, along with several aircrafts and different artillery of the yesteryears that were used by the Pakistan Navy. There is also a six-gallery indoor museum that educates visitors through murals, relief sculptures and dioramas.</p>
+                <img class="img" src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0c/d9/7f/1d/ship.jpg?w=1200&h=-1&s=1">
+            </section>
+
+            <section class="feedback">
+                <h1>Your Review Matters!</h1>
+                <form id="form">
+                    <label for="name">Name:</label> <br>
+                    <input type="text" id="name" name="name" > <br> <br>
+                    <label for="email">E-mail:</label> <br>
+                    <input type="email" id="email" name="email"> <br> <br>
+                    <label for="message">Feedback:</label> <br>
+                    <textarea form="form" name="message" rows="5" cols="60">Write your review</textarea> <br>
+                    <input type="button" value="Submit" class="submit">
+                </form>
+            </section>
+        </article>
+</body>
